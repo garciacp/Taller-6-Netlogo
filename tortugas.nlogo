@@ -42,6 +42,16 @@ to mover-turtles
                          ]
        if energy < 0  [ die ]
        if edad = 43   [ die ]
+
+      if any? other turtles-here [
+      show "muerte x choque"
+      ;show count Sheeps-here
+      ;show count other Sheeps-here
+      ask turtles-here [ die ]
+    ]
+
+
+
     ]
 end
 
